@@ -1,11 +1,14 @@
 #ifndef Array_h
 #define Array_h
 
+struct str {
+    const char *p;
+};
+
 class Array{
 
     private:
-    const char **elements;    
-    int size;
+    str array[100];    //you do not specify a size but i've actually found it works pretty well.
     int numOfEl;
 
     public:

@@ -5,18 +5,18 @@
 #include "BinaryTreeAVL.h"
 
 using namespace std;
+struct str {
+    const char *p;
+};
 
-void changeData(int * data){
-    data[0] = 45;
- }
-
-int main(){
+int main(void){
     
-    int *data = new int[5];
-    data[1] = 5;
-    changeData(data);
-    cout<<data[0]<<endl;
+    str array[50];
+    array[0].p = "this";
+    array[1].p = "that";
 
+    delete array->p;
+    cout<<array[1].p<<endl;
 
     return 0;
 }
